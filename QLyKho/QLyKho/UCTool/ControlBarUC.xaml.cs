@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLyKho.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,11 @@ namespace QLyKho.UCTool
     /// </summary>
     public partial class ControlBarUC : UserControl
     {
+        public ControlBarVM ViewModel { get; set; }
         public ControlBarUC()
         {
             InitializeComponent();
+            this.DataContext = ViewModel = new ControlBarVM();
         }
     }
 }

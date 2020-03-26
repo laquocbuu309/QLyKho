@@ -24,3 +24,9 @@ D:\Learning\Git\QuanLyKho\QLyKho\QLyKho\obj\Debug\QLyKho.exe
 D:\Learning\Git\QuanLyKho\QLyKho\QLyKho\obj\Debug\QLyKho.pdb
 D:\Learning\Git\QuanLyKho\QLyKho\QLyKho\obj\Debug\LoginWindows.g.cs
 D:\Learning\Git\QuanLyKho\QLyKho\QLyKho\obj\Debug\LoginWindows.baml
+D:\Learning\Git\QuanLyKho\QLyKho\QLyKho\obj\Debug\UCTool\ControlBarUC.g.cs
+D:\Learning\Git\QuanLyKho\QLyKho\QLyKho\obj\Debug\UCTool\ControlBarUC.baml
+D:\Learning\Git\QuanLyKho\QLyKho\QLyKho\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\Learning\Git\QuanLyKho\QLyKho\QLyKho\bin\Debug\System.Windows.Interactivity.dll
+D:\Learning\Git\QuanLyKho\QLyKho\QLyKho\bin\Debug\Microsoft.Expression.Interactions.xml
+D:\Learning\Git\QuanLyKho\QLyKho\QLyKho\bin\Debug\System.Windows.Interactivity.xml
