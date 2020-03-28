@@ -6,6 +6,7 @@
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         xmlns:local="clr-namespace:QLyKho"
         mc:Ignorable="d"
+        
         xmlns:uc="clr-namespace:QLyKho.UCTool"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
@@ -19,6 +20,7 @@
         ResizeMode="NoResize"
         WindowStyle="None"
         WindowStartupLocation="CenterScreen"
+        
         Name="mainWindow"
         Title="Màn Hình Chính" Height="450" Width="650">
     <i:Interaction.Triggers>
