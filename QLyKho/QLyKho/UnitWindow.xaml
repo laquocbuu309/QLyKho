@@ -38,7 +38,7 @@
             <materialDesign:Card Grid.Row="0" Margin="5">
                 <Grid>
                     <TextBox  
-                        Text="{Binding DisplayName}"
+                        Text="{Binding DisplayName, UpdateSourceTrigger=PropertyChanged}"
                         materialDesign:HintAssist.Hint="Tên đơn vị đo"  
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
                 </Grid>

@@ -15,6 +15,7 @@ namespace QLyKho.ViewModel
         public ICommand UnitCommand { get; set; }
         public ICommand SupplierCommand { get; set; }
         public ICommand CustomerCommand { get; set; }
+        public ICommand ObjectCommand { get; set; }
         public MainViewModel()
         {
             LoadedWindowCommand = new RelayCommand<object>((p) => { return true; }, (p) =>
@@ -42,6 +43,13 @@ namespace QLyKho.ViewModel
             CustomerCommand = new RelayCommand<object>((p) => { return true; }, (p) =>
             {
                 CustomerWindow wd = new CustomerWindow();
+                wd.ShowDialog();
+            }
+            );
+
+            ObjectCommand = new RelayCommand<object>((p) => { return true; }, (p) =>
+            {
+                ObjectWindow wd = new ObjectWindow();
                 wd.ShowDialog();
             }
             );
