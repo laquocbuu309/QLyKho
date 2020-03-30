@@ -106,7 +106,7 @@
 
                         </Grid>
                     </Button>
-                    <Button Grid.Column="3"  ToolTip="Đơn Vị Đo">
+                    <Button Grid.Column="3" Command="{Binding UnitCommand}"  ToolTip="Đơn Vị Đo">
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition></RowDefinition>
@@ -122,7 +122,7 @@
 
                         </Grid>
                     </Button>
-                    <Button Grid.Column="4" ToolTip="Nhà Cung Cấp">
+                    <Button Grid.Column="4" ToolTip="Nhà Cung Cấp" Command="{Binding SupplierCommand}">
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition></RowDefinition>
