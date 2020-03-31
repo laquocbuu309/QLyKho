@@ -139,7 +139,7 @@
 
                         </Grid>
                     </Button>
-                    <Button Grid.Column="5" ToolTip="Khách Hàng">
+                    <Button Grid.Column="5" ToolTip="Khách Hàng" Command="{Binding CustomerCommandi}">
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition></RowDefinition>
@@ -155,18 +155,18 @@
 
                         </Grid>
                     </Button>
-                    <Button Grid.Column="5" ToolTip="Khách Hàng">
+                    <Button Grid.Column="6" ToolTip="Người dùng">
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition></RowDefinition>
                                 <RowDefinition></RowDefinition>
                             </Grid.RowDefinitions>
                             <Grid Grid.Row="0">
-                                <TextBlock HorizontalAlignment="Stretch" Grid.Row="0" Text="Khách Hàng"></TextBlock>
+                                <TextBlock HorizontalAlignment="Stretch" Grid.Row="0" Text="Người dùng"></TextBlock>
                             </Grid>
 
                             <Grid Grid.Row="1">
-                                <materialDesign:PackIcon Height="24" Width="24" HorizontalAlignment="Stretch" Kind="HumanGreeting" Grid.Row="1"/>
+                                <materialDesign:PackIcon Height="24" Width="24" HorizontalAlignment="Stretch" Kind="HumanMaleFemale" Grid.Row="1"/>
                             </Grid>
 
                         </Grid>

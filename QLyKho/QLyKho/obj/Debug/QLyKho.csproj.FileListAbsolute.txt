@@ -66,3 +66,11 @@ D:\C#\Project\QLyKho\QLyKho\QLyKho\obj\Debug\QLyKho.csproj.CoreCompileInputs.cac
 D:\C#\Project\QLyKho\QLyKho\QLyKho\obj\Debug\QLyKho.csproj.CopyComplete
 D:\C#\Project\QLyKho\QLyKho\QLyKho\obj\Debug\QLyKho.exe
 D:\C#\Project\QLyKho\QLyKho\QLyKho\obj\Debug\QLyKho.pdb
+D:\Learning\Git\QuanLyKho\QLyKho\QLyKho\obj\Debug\CustomerWindow.g.cs
+D:\Learning\Git\QuanLyKho\QLyKho\QLyKho\obj\Debug\ObjectWindow.g.cs
+D:\Learning\Git\QuanLyKho\QLyKho\QLyKho\obj\Debug\SupplierWindow.g.cs
+D:\Learning\Git\QuanLyKho\QLyKho\QLyKho\obj\Debug\UnitWindow.g.cs
+D:\Learning\Git\QuanLyKho\QLyKho\QLyKho\obj\Debug\CustomerWindow.baml
+D:\Learning\Git\QuanLyKho\QLyKho\QLyKho\obj\Debug\SupplierWindow.baml
+D:\Learning\Git\QuanLyKho\QLyKho\QLyKho\obj\Debug\UnitWindow.baml
+D:\Learning\Git\QuanLyKho\QLyKho\QLyKho\obj\Debug\ObjectWindow.baml
