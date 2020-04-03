@@ -74,3 +74,13 @@ D:\Learning\Git\QuanLyKho\QLyKho\QLyKho\obj\Debug\CustomerWindow.baml
 D:\Learning\Git\QuanLyKho\QLyKho\QLyKho\obj\Debug\SupplierWindow.baml
 D:\Learning\Git\QuanLyKho\QLyKho\QLyKho\obj\Debug\UnitWindow.baml
 D:\Learning\Git\QuanLyKho\QLyKho\QLyKho\obj\Debug\ObjectWindow.baml
+D:\C#\Project\QLyKho\QLyKho\QLyKho\obj\Debug\CustomerWindow.g.cs
+D:\C#\Project\QLyKho\QLyKho\QLyKho\obj\Debug\ObjectWindow.g.cs
+D:\C#\Project\QLyKho\QLyKho\QLyKho\obj\Debug\UserWindow.g.cs
+D:\C#\Project\QLyKho\QLyKho\QLyKho\obj\Debug\CustomerWindow.baml
+D:\C#\Project\QLyKho\QLyKho\QLyKho\obj\Debug\ObjectWindow.baml
+D:\C#\Project\QLyKho\QLyKho\QLyKho\obj\Debug\UserWindow.baml
+D:\C#\Project\QLyKho\QLyKho\QLyKho\obj\Debug\InputWindow.g.cs
+D:\C#\Project\QLyKho\QLyKho\QLyKho\obj\Debug\OutputWindow.g.cs
+D:\C#\Project\QLyKho\QLyKho\QLyKho\obj\Debug\InputWindow.baml
+D:\C#\Project\QLyKho\QLyKho\QLyKho\obj\Debug\OutputWindow.baml

@@ -16,6 +16,9 @@ namespace QLyKho.ViewModel
         public ICommand SupplierCommand { get; set; }
         public ICommand CustomerCommand { get; set; }
         public ICommand ObjectCommand { get; set; }
+        public ICommand UserCommand { get; set; }
+        public ICommand InputCommand { get; set; }
+        public ICommand OutputCommand { get; set; }
         public MainViewModel()
         {
             LoadedWindowCommand = new RelayCommand<object>((p) => { return true; }, (p) =>
@@ -53,6 +56,27 @@ namespace QLyKho.ViewModel
                 wd.ShowDialog();
             }
             );
+
+            UserCommand = new RelayCommand<object>((p) => { return true; }, (p) =>
+            {
+                UserWindow wd = new UserWindow();
+                wd.ShowDialog();
+            }
+            );
+
+            InputCommand = new RelayCommand<object>((p) => { return true; }, (p) =>
+            {
+                InputWindow wd = new InputWindow();
+                wd.ShowDialog();
+            }
+           );
+
+            OutputCommand = new RelayCommand<object>((p) => { return true; }, (p) =>
+            {
+                OutputWindow wd = new OutputWindow();
+                wd.ShowDialog();
+            }
+           );
         }
     }
 }

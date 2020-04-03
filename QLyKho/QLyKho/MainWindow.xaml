@@ -59,7 +59,7 @@
                         <ColumnDefinition></ColumnDefinition>
                         <ColumnDefinition></ColumnDefinition>
                     </Grid.ColumnDefinitions>
-                    <Button Grid.Column="0" ToolTip="Nhập Kho">
+                    <Button Grid.Column="0" ToolTip="Nhập Kho" Command="{Binding InputCommand}">
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition></RowDefinition>
@@ -75,7 +75,7 @@
                             
                         </Grid>
                     </Button>
-                    <Button Grid.Column="1"  ToolTip="Xuất Kho">
+                    <Button Grid.Column="1"  ToolTip="Xuất Kho" Command="{Binding OutputCommand}">
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition></RowDefinition> 
@@ -139,7 +139,7 @@
 
                         </Grid>
                     </Button>
-                    <Button Grid.Column="5" ToolTip="Khách Hàng" Command="{Binding CustomerCommandi}">
+                    <Button Grid.Column="5" ToolTip="Khách Hàng" Command="{Binding CustomerCommand}">
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition></RowDefinition>
@@ -155,7 +155,7 @@
 
                         </Grid>
                     </Button>
-                    <Button Grid.Column="6" ToolTip="Người dùng">
+                    <Button Grid.Column="6" ToolTip="Người dùng" Command="{Binding UserCommand}">
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition></RowDefinition>
