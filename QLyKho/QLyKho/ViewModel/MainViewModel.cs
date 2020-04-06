@@ -1,5 +1,7 @@
-﻿using System;
+﻿using QLyKho.Model;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +12,8 @@ namespace QLyKho.ViewModel
 {
     public class MainViewModel : BaseViewModel
     {
+        private ObservableCollection<TonKho> _TonKhoList;
+        public ObservableCollection<TonKho> TonKhoList { get => _TonKhoList; set { _TonKhoList = value;OnPropertyChanged(); } }
         public bool isLoaded = false;
         public ICommand LoadedWindowCommand { get; set; }
         public ICommand UnitCommand { get; set; }
@@ -35,6 +39,8 @@ namespace QLyKho.ViewModel
                 if (loginVM.IsLogin)
                 {
                     p.Show();
+
+                    LoadTonKhoData();
                 }
                 else
                 {
@@ -92,6 +98,37 @@ namespace QLyKho.ViewModel
                 wd.ShowDialog();
             }
            );
+        }
+
+        private void LoadTonKhoData()
+        {
+            TonKhoList = new ObservableCollection<TonKho>();
+            var objectList = DataProvider.Ins.db.Objects;
+            int i = 1;
+            foreach (var item in objectList)
+            {
+                var inputList = DataProvider.Ins.db.InputInfoes.Where(p => p.IdObject == item.Id);
+                var outputList = DataProvider.Ins.db.OutputInfoes.Where(p => p.IdObject == item.Id);
+
+                int sumInput = 0;
+                int sumOutput = 0;
+
+                if (inputList != null)
+                    sumInput = (int)inputList.Sum(p => p.Count);
+                if (outputList!=null)
+                {
+                    sumOutput = (int)outputList.Sum(p => p.Count);
+                }
+
+                TonKho tonkho = new TonKho();
+                tonkho.STT = i;
+                tonkho.Object = item;
+                tonkho.Count = sumInput - sumOutput;
+
+                TonKhoList.Add(tonkho);
+                i++;
+                                               
+            }
         }
     }
 }
