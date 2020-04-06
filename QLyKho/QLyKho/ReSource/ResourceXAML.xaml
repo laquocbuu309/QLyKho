@@ -3,4 +3,6 @@
                     xmlns:viewmodel ="clr-namespace:QLyKho.ViewModel"
                     xmlns:local="clr-namespace:QLyKho.ReSource">
     <viewmodel:MainViewModel x:Key="MainVM"></viewmodel:MainViewModel>
+    <viewmodel:LoginViewModel x:Key="LoginVM"></viewmodel:LoginViewModel>
+    
 </ResourceDictionary>

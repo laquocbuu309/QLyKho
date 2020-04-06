@@ -1,3 +1,5 @@
+USE master
+
 CREATE DATABASE QuanLyKho
 GO
 
@@ -110,12 +112,14 @@ CREATE TABLE OutputInfo
 (
 	Id NVARCHAR(128) PRIMARY KEY,
 	IdObject NVARCHAR(128) NOT NULL,
+	IdOutput NVARCHAR(128) NOT NULL,
 	IdInputInfo NVARCHAR(128) NOT NULL,
 	IdCustomer INT NOT NULL,
 	Count INT,
 	Status NVARCHAR(max)
 
 	FOREIGN KEY(IdObject) REFERENCES dbo.Object(Id),
+	FOREIGN KEY(IdOutput) REFERENCES dbo.Output(Id),
 	FOREIGN KEY(IdInputInfo) REFERENCES dbo.InputInfo(Id),
 	FOREIGN KEY(IdCustomer) REFERENCES dbo.Customer(Id)
 )
