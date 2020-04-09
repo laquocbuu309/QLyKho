@@ -110,6 +110,8 @@ namespace QLyKho.ViewModel
                 var inputList = DataProvider.Ins.db.InputInfoes.Where(p => p.IdObject == item.Id);
                 var outputList = DataProvider.Ins.db.OutputInfoes.Where(p => p.IdObject == item.Id);
 
+                var unit = DataProvider.Ins.db.Units.Where(p => p.Id == item.IdUnit).First();
+
                 int sumInput = 0;
                 int sumOutput = 0;
 
@@ -124,7 +126,7 @@ namespace QLyKho.ViewModel
                 tonkho.STT = i;
                 tonkho.Object = item;
                 tonkho.Count = sumInput - sumOutput;
-
+                tonkho.Unit = unit;
                 TonKhoList.Add(tonkho);
                 i++;
                                                

@@ -368,12 +368,13 @@
                             <Separator Margin="5"></Separator>
                         </Grid>
                         <Grid Grid.Row="2">
-                            <ListView>
+                            <ListView ItemsSource="{Binding TonKhoList}">
                                 <ListView.View>
                                     <GridView>
                                         <GridViewColumn Header="STT" DisplayMemberBinding="{Binding STT}"></GridViewColumn>
                                         <GridViewColumn Header="Tên Vật Tư" DisplayMemberBinding="{Binding Object.DisplayName}"></GridViewColumn>
                                         <GridViewColumn Header="Số Lượng Còn Lại" DisplayMemberBinding="{Binding Count}"></GridViewColumn>
+                                        <GridViewColumn Header="Đơn vị" DisplayMemberBinding="{Binding Unit.DisplayName}"></GridViewColumn>
                                     </GridView>
                                 </ListView.View>
                             </ListView>

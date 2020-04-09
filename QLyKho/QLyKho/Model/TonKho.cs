@@ -11,6 +11,6 @@ namespace QLyKho.Model
         public Object Object { get; set; }
         public int STT { get; set; }
         public int Count { get; set; }
-
+        public Unit Unit { get; set; }
     }
 }

@@ -15,11 +15,12 @@
         TextOptions.TextRenderingMode="Auto"
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
-        DataContext="{StaticResource MainVM}"
+        DataContext="{StaticResource UnitVM}"
         ResizeMode="NoResize"
         WindowStyle="None"
         WindowStartupLocation="CenterScreen"
         Name="unitWindow"
+        
         Title="ĐƠN VỊ ĐO" Height="500" Width="340">
     <Grid>
         <Grid.RowDefinitions>
@@ -38,7 +39,7 @@
             <materialDesign:Card Grid.Row="0" Margin="5">
                 <Grid>
                     <TextBox  
-                        Text="{Binding DisplayName, UpdateSourceTrigger=PropertyChanged}"
+                        Text="{Binding DisplayName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
                         materialDesign:HintAssist.Hint="Tên đơn vị đo"  
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
                 </Grid>
