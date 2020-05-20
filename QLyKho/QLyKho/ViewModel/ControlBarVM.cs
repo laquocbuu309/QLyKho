@@ -22,7 +22,20 @@ namespace QLyKho.ViewModel
             CloseWindowCommand = new RelayCommand<UserControl>((p) => { return p == null ? false : true; }, (p) => { Window window = GetWindowParent(p);
                 if (window != null)
                 {
-                    window.Close();
+                    if( window.Name == "loginWindow" || window.Name == "mainWindow")
+                    {
+                        AnnounceWindow tb = new AnnounceWindow("Bạn có muốn thoát không?", "CauHoi");
+                        tb.ShowDialog();
+                        if (tb.Yes == true)
+                        {
+                            window.Close();
+                        }
+                        else
+                        {
+                            return;
+                        }
+                    }
+                    else window.Close();
                 }                    
             }
             );

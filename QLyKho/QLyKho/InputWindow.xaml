@@ -38,8 +38,8 @@
             </Grid.RowDefinitions>
             <materialDesign:Card Grid.Row="0" Margin="5">
                 <WrapPanel>
-                    <ComboBox Margin="5 5 15 5" DisplayMemberPath="DisplayName" ItemsSource="{Binding Objects}" SelectedItem="{Binding SelectedObject, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" materialDesign:HintAssist.Hint="Tên Vật Tư" IsEditable="True" Style="{StaticResource MaterialDesignFloatingHintComboBox}"></ComboBox>
-                    <DatePicker VerticalAlignment="Center" SelectedDate="{Binding SelectedInputFix.DateInput, UpdateSourceTrigger=PropertyChanged}" Width="100" Margin="5 5 15 5" materialDesign:HintAssist.Hint="Ngày nhập" Style="{StaticResource MaterialDesignFloatingHintDatePicker}" />
+                    <ComboBox Margin="5 5 15 5" DisplayMemberPath="DisplayName" ItemsSource="{Binding ObjectList}" SelectedItem="{Binding SelectedObject, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" materialDesign:HintAssist.Hint="Tên Vật Tư" IsEditable="True" Style="{StaticResource MaterialDesignFloatingHintComboBox}"></ComboBox>
+                    <DatePicker VerticalAlignment="Center" SelectedDate="{Binding DateInput, UpdateSourceTrigger=PropertyChanged}" Width="100" Margin="5 5 15 5" materialDesign:HintAssist.Hint="Ngày nhập" Style="{StaticResource MaterialDesignFloatingHintDatePicker}" />
                     <TextBox Text="{Binding Count, UpdateSourceTrigger=PropertyChanged}" Margin="5 5 15 5" materialDesign:HintAssist.Hint="Số lượng" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
                     <TextBox Text="{Binding InputPrice, UpdateSourceTrigger=PropertyChanged}" Margin="5 5 15 5" materialDesign:HintAssist.Hint="Giá nhập" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
                     <TextBox Text="{Binding Status, UpdateSourceTrigger=PropertyChanged}" Margin="5 5 15 5" materialDesign:HintAssist.Hint="Trạng thái nhập" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />

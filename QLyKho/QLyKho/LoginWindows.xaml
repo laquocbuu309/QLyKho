@@ -48,7 +48,8 @@
                 <Grid Grid.Row="0">
                     <TextBox  VerticalAlignment="Bottom" Text="{Binding UserName}"
                         materialDesign:HintAssist.Hint="Tên Đăng Nhập"  
-                        Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}" 
+                        FocusManager.FocusedElement="{Binding RelativeSource={RelativeSource Self}}"/>
                 </Grid>
                 <Grid Grid.Row="1">
                     <PasswordBox  VerticalAlignment="Bottom"

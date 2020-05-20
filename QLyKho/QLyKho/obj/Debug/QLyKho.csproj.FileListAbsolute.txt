@@ -148,3 +148,6 @@ D:\Learning\Git\QuanLyKho\QLyKho\QLyKho\QLyKho\obj\Debug\QLyKho.csproj.CoreCompi
 D:\Learning\Git\QuanLyKho\QLyKho\QLyKho\QLyKho\obj\Debug\QLyKho.csproj.CopyComplete
 D:\Learning\Git\QuanLyKho\QLyKho\QLyKho\QLyKho\obj\Debug\QLyKho.exe
 D:\Learning\Git\QuanLyKho\QLyKho\QLyKho\QLyKho\obj\Debug\QLyKho.pdb
+D:\Learning\Git\QuanLyKho\QLyKho\QLyKho\QLyKho\obj\Debug\AnnounceWindow.g.cs
+D:\Learning\Git\QuanLyKho\QLyKho\QLyKho\QLyKho\obj\Debug\AnnounceWindow.baml
+D:\Learning\Git\QuanLyKho\QLyKho\QLyKho\QLyKho\obj\Debug\Resouce\Rs_XAML.baml

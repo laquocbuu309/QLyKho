@@ -11,7 +11,7 @@ namespace QLyKho.ViewModel
 {
     public class CustomerViewModel : BaseViewModel
     {
-        #region
+        #region Attribute
         private ObservableCollection<Customer> _List;
         public ObservableCollection<Customer> List { get => _List; set { _List = value; OnPropertyChanged(); } }
 

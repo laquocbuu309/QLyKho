@@ -91,6 +91,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AnnounceWindow.xaml.cs">
+      <DependentUpon>AnnounceWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CustomerWindow.xaml.cs">
       <DependentUpon>CustomerWindow.xaml</DependentUpon>
     </Compile>
@@ -168,6 +171,7 @@
     <Compile Include="UserWindow.xaml.cs">
       <DependentUpon>UserWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\AnnounceVM.cs" />
     <Compile Include="ViewModel\BaseViewModel.cs" />
     <Compile Include="ViewModel\ControlBarVM.cs" />
     <Compile Include="ViewModel\CustomerViewModel.cs" />
@@ -178,6 +182,10 @@
     <Compile Include="ViewModel\SupplierViewModel.cs" />
     <Compile Include="ViewModel\UnitViewModel.cs" />
     <Compile Include="ViewModel\UserViewModel.cs" />
+    <Page Include="AnnounceWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CustomerWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -210,7 +218,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ReSource\ResourceXAML.xaml">
+    <Page Include="Resouce\Rs_XAML.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
