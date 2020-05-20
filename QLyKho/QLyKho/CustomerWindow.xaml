@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:QLyKho"
         mc:Ignorable="d"
         
-         xmlns:uc="clr-namespace:QLyKho.UCTool"
+        xmlns:uc="clr-namespace:QLyKho.UCTool"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         TextElement.FontWeight="Regular"
@@ -15,12 +15,13 @@
         TextOptions.TextRenderingMode="Auto"
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
-        DataContext="{StaticResource MainVM}"
+        DataContext="{StaticResource CustomerVM}"
         ResizeMode="NoResize"
         WindowStyle="None"
         WindowStartupLocation="CenterScreen"
+        Name="window"
         
-        Title="CustomerWindow" Height="500" Width="700">
+        Title="KHÁCH HÀNG" Height="500" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"></RowDefinition>

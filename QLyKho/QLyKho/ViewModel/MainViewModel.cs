@@ -29,7 +29,6 @@ namespace QLyKho.ViewModel
             {
                 isLoaded = true;
                 if (p == null) return;
-
                 p.Hide();
                 LoginWindows loginWindow = new LoginWindows();
                 loginWindow.ShowDialog();
@@ -89,6 +88,7 @@ namespace QLyKho.ViewModel
             {
                 InputWindow wd = new InputWindow();
                 wd.ShowDialog();
+                LoadTonKhoData();
             }
            );
 
@@ -115,17 +115,20 @@ namespace QLyKho.ViewModel
                 int sumInput = 0;
                 int sumOutput = 0;
 
-                if (inputList != null)
+                if (inputList != null && inputList.Count() >0)
                     sumInput = (int)inputList.Sum(p => p.Count);
-                if (outputList!=null)
+                if (outputList!=null && outputList.Count() >0)
                 {
                     sumOutput = (int)outputList.Sum(p => p.Count);
                 }
+                int tonkhoCount = sumInput - sumOutput;
+                if (tonkhoCount <= 0)
+                    continue;
 
                 TonKho tonkho = new TonKho();
                 tonkho.STT = i;
                 tonkho.Object = item;
-                tonkho.Count = sumInput - sumOutput;
+                tonkho.Count = tonkhoCount;
                 tonkho.Unit = unit;
                 TonKhoList.Add(tonkho);
                 i++;

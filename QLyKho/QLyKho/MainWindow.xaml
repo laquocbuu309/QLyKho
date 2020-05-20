@@ -22,7 +22,7 @@
         WindowStartupLocation="CenterScreen"
         
         Name="mainWindow"
-        Title="Màn Hình Chính" Height="450" Width="650">
+        Title="Màn Hình Chính" Height="600" Width="650">
     <i:Interaction.Triggers>
         <i:EventTrigger EventName="Loaded">
             <i:InvokeCommandAction Command="{Binding LoadedWindowCommand}" CommandParameter="{Binding ElementName=mainWindow}"/>
