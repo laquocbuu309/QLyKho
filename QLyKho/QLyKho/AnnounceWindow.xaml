@@ -36,7 +36,6 @@
                             <Setter Property="FontFamily" Value="Segoe"></Setter>
                             <Setter Property="FontSize" Value="15"></Setter>
                             <Setter Property="FontWeight" Value="Bold"></Setter>
-                            <Setter Property="Foreground" Value="Black"></Setter>
                             <Setter Property="Margin" Value="5,10,5,10"></Setter>
                         </Style>
                     </Grid.Resources>
@@ -47,17 +46,17 @@
                     </Grid.ColumnDefinitions>
                     <Button Grid.Column="1" x:Name="btnOk" Click="btnOk_Click"
                         Style="{StaticResource MaterialDesignRaisedButton}"  
-                        Content="Ok" Background="AliceBlue" Width="70">
+                        Content="OK" Background="AliceBlue" Width="70" Foreground="Black">
                     </Button>
 
                     <Button Grid.Column="0" x:Name="btnYes" Command="{Binding YesCommand}" Click="btnYes_Click"  
                         Style="{StaticResource MaterialDesignRaisedButton}" 
-                        Content="Yes"  Background="LawnGreen" Width="70">
+                        Content="YES"  Background="LawnGreen" Width="70" Foreground="Black">
                     </Button>
 
                     <Button Grid.Column="2" x:Name="btnNo"  Command="{Binding NoCommand}"  Click="btnNo_Click" 
                         Style="{StaticResource MaterialDesignRaisedButton}"  
-                        Content="No" Background="Red" Width="70">
+                        Content="NO" Background="Red" Width="70" Foreground="Black">
                     </Button>
                     
                 </Grid>

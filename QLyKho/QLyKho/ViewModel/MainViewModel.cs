@@ -53,6 +53,7 @@ namespace QLyKho.ViewModel
             {
                 UnitWindow wd = new UnitWindow();
                 wd.ShowDialog();
+                
             }
             );
 
